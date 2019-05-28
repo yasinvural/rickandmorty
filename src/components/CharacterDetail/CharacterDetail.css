@@ -1,0 +1,57 @@
+.character-detail-container{
+    width: 50%;
+    margin: 5% auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.character-detail-container .info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character-detail-container .info-container .info{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 10px;
+}
+.character-detail-container .info-container .episodes{
+    font-size: 16px;
+}
+
+.character-detail-container .info-container .episodes .episode-names{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character-detail-container .info-container .episodes .episode-names .episode-name{
+    margin: 5px;
+}
+
+.character-detail-container .info-container .info span{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.back-button-container{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.back-button-container .back-button{
+    width: 100px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius : 6px;
+    margin: 0 auto;
+}
+
+.back-button-container .back-button:hover{
+    background-color: #ccc;
+    color: white;
+}

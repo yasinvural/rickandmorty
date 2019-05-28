@@ -1,0 +1,13 @@
+.character-card{
+    max-width: 300px;
+    flex: 18%;
+    margin: 1%;
+}
+
+.character-card a{
+    color: inherit;
+}
+
+.character-card-media{
+    height: 300px;
+}
