@@ -1,4 +1,4 @@
-import { CHARACTERLIST, CHARACTERDETAIL, EPISODENAME, CLEARDETAIL } from "../const/index";
+import { CHARACTERLIST, CHARACTERDETAIL, EPISODENAME, CLEARDETAIL, CLEARLIST } from "../const/index";
 let initialState = {
   list: [],
   page: '',
@@ -28,6 +28,11 @@ const character = (state = initialState, action) => {
     return Object.assign({},state,{
       episodeNames: [...action.payload]
     })
+    case CLEARLIST:
+    return Object.assign({},state,{
+      list: [],
+      page: ''
+    });
     case CLEARDETAIL:
     return Object.assign({},state,{
       episodeNames: [],

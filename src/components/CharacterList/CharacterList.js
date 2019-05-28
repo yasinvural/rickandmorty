@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./CharacterList.css";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
-import { getCharacterList } from "../../actions/character";
+import { getCharacterList, clearList } from "../../actions/character";
 import CharacterCard from "../CharacterCard/CharacterCard";
 
 let scrollContainer;
@@ -21,6 +21,7 @@ class CharacterList extends Component {
 
   componentWillUnmount() {
     scrollContainer.removeEventListener("scroll", this.handleScroll);
+    this.props.clearList();
   }
 
   handleScroll = () => {
@@ -61,7 +62,7 @@ function mapStateToProps(state) {
 }
 
 function mapStateToDispatch(dispatch) {
-  return bindActionCreators({ getCharacterList }, dispatch);
+  return bindActionCreators({ getCharacterList, clearList }, dispatch);
 }
 
 export default connect(

@@ -1,4 +1,4 @@
-import { CHARACTERLIST, CHARACTERDETAIL, EPISODENAME, CLEARDETAIL } from "../const/index";
+import { CHARACTERLIST, CHARACTERDETAIL, EPISODENAME, CLEARDETAIL, CLEARLIST } from "../const/index";
 import RickAndMortService from "../services/RickAndMortyService";
 const rickAndMortService = new RickAndMortService();
 
@@ -37,6 +37,12 @@ export function getEpisodeNames(episodes){
       })
     })
   }
+}
+
+export function clearList(){
+  return({
+    type: CLEARLIST,
+  })
 }
 
 export function clearDetail(){

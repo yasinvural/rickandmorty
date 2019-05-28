@@ -4,4 +4,8 @@ export const CHARACTERDETAIL = "CHARACTERDETAIL";
 
 export const EPISODENAME = "EPISODENAME";
 
+export const CLEARLIST = "CLEARLIST";
+
 export const CLEARDETAIL = "CLEARDETAIL";
+
+

@@ -1,6 +1,6 @@
 .character-detail-container{
     width: 50%;
-    margin: 5% auto;
+    margin: 0 auto;
     display:flex;
     flex-direction:column;
     justify-content: space-between;
